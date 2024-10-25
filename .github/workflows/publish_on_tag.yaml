@@ -22,7 +22,7 @@ jobs:
 
     - name: Set version
       run: |
-        VERSION=${GITHUB_REF#refs/tags/v}
+        VERSION=${GITHUB_REF#refs/tags/}
         hatch version $VERSION
     
     - name: Build and push
